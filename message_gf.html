@@ -1,0 +1,175 @@
+                 Title: gf
+                 
+                 <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Message for My Love</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f8f8f8;
+
+            text-align: center;
+
+            color: #333;
+
+        }
+
+        .content {
+
+            padding: 20px;
+
+            margin-top: 30px;
+
+            background-color: white;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            max-width: 600px;
+
+            margin: auto;
+
+        }
+
+        h1 {
+
+            color: #ff6f61;
+
+        }
+
+        .gif-container img {
+
+            width: 100%;
+
+            max-width: 400px;
+
+            border-radius: 10px;
+
+        }
+
+        .quiz {
+
+            background-color: #ffecb3;
+
+            border-radius: 10px;
+
+            padding: 20px;
+
+            margin-top: 20px;
+
+        }
+
+        .quiz input {
+
+            margin: 10px;
+
+            padding: 10px;
+
+        }
+
+        .quiz button {
+
+            padding: 10px 20px;
+
+            background-color: #ff6f61;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="content">
+
+    <h1>Hey love! 💖</h1>
+
+    <div class="gif-container">
+
+        <img src="https://media.giphy.com/media/3o7TKv6Vd6qerDRmgk/giphy.gif" alt="cute gif">
+
+    </div>
+
+
+    <p>Just wanted to remind you that no matter the distance, you're always in my heart. I think about you all the time, and every moment we share means so much to me. Love you, always.</p>
+
+
+    <div class="quiz">
+
+        <h3>Quick Quiz Time! 💌</h3>
+
+        <p>Let's see how well you know me! 😊</p>
+
+        <form id="quizForm">
+
+            <p>What's my favorite color?</p>
+
+            <input type="text" id="colorAnswer" placeholder="Type your answer here">
+
+            <button type="submit">Submit Answer</button>
+
+        </form>
+
+        <p id="quizResult"></p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+
+        e.preventDefault();
+
+        var answer = document.getElementById('colorAnswer').value.toLowerCase();
+
+        var resultText = '';
+
+
+        if (answer === 'blue') {
+
+            resultText = 'Correct! You really know me! 💙';
+
+        } else {
+
+            resultText = 'Oops! Try again, love. 😘';
+
+        }
+
+
+        document.getElementById('quizResult').innerText = resultText;
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
+
